@@ -75,6 +75,7 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -372,8 +373,6 @@ img {
 
 .galery-items .item {
   width: 370px;
-
-  border: 1px solid #eeeeee;
 }
 
 .galery-items .item:not(:nth-child(3n)) {
@@ -386,6 +385,8 @@ img {
 
 .galery-names {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .galery-names .galery-title {
