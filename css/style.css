@@ -21,6 +21,8 @@ body {
 /* Утилиты */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -83,9 +85,9 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav .item + .item,
-.auth-nav .item + .item {
-  margin-left: 50px;
+.site-nav .item:not(:last-child),
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link {
@@ -178,8 +180,8 @@ img {
   width: 270px;
 }
 
-.method-items .item + .item {
-  margin-left: 30px;
+.method-items .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .method-subtitle {
@@ -240,8 +242,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-items .item + .item {
-  margin-left: 30px;
+.team-items .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .item-names {
@@ -348,8 +350,8 @@ img {
   border: 1px solid transparent;
 }
 
-.button-items .item + .item {
-  margin-left: 8px;
+.button-items .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-items .btn:hover,
